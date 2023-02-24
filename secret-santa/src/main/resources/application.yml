@@ -1,0 +1,23 @@
+logging.level.org.springframework.web: INFO
+
+cqrs:
+  commandstore:
+    postgres:
+      schema: "cqrs"
+      table: "commands"
+      database:
+        host: "localhost"
+        port: 5432
+        name: "secret-santa"
+        username: "postgres"
+        password: "postgres"
+  eventstore:
+    postgres:
+      schema: "cqrs"
+      table: "events"
+      database:
+        host: "localhost"
+        port: 5432
+        name: "secret-santa"
+        username: "postgres"
+        password: "postgres"
